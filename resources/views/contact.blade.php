@@ -17,7 +17,7 @@ Home
 
     <section class="contact">
         <div class="contact-head">
-            <form action="/contactus" method="post">
+            <form action="/contact" method="post">
                 @csrf
             <h2>Contact Us</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, veniam? Optio incidunt animi delectu</p>

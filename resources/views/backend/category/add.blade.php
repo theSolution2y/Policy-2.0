@@ -29,11 +29,31 @@
         <table class="table table-bordered">
             <tr>
                 <th>Title</th>
-                <td><input type="text" name="title" class="form-control" /></td>
+                <td>
+                <textarea
+                    name="title"
+                    id="title"
+                    class="form-control"
+                    cols="5"
+                    rows="1"
+                ></textarea>
+                </td>
             </tr>
             <tr>
                 <th>Detail</th>
-                <td><input type="text" name="detail" class="form-control" /></td>
+                <td>
+                <textarea
+                    name="detail"
+                    id="detail"
+                    class="form-control"
+                    cols="5"
+                    rows="1"
+                ></textarea>
+                </td>
+                <script src="https://cdn.ckeditor.com/4.15.0/standard/ckeditor.js"></script>
+                <script>
+                    CKEDITOR.replace('detail');
+                </script>
             </tr>
             <tr>
                 <th>Image</th>
