@@ -15,9 +15,16 @@ class ContactController extends Controller
     function send(Request $req){
         $contact=new contact;
         $contact->name=$req->name;
+        $contact->dob=$req->dob;
         $contact->email=$req->email;
-        $contact->message=$req->message;
+        $contact->phone=$req->phone;
+        $contact->country=$req->country;
+        $contact->state=$req->state;
+        
+        
         $contact->save();
         return back()->with('Success');
-       }
     }
+
+    
+}

@@ -51,6 +51,7 @@ Route::post('/contact',[ContactController::class, 'send']);
 Route::view('/contact','contact');
 Route::get('/contactus/{id}',[ContactController::class, 'contact']);
 
+
 Route::get('/admin/export', [ExportController::class, 'export']);
 
 
