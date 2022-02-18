@@ -30,7 +30,7 @@
                         <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
                         <li class="nav__item"><a href="#menud" class="nav__link">Policy</a></li>
                         <li class="nav__item"><a href="#gallary" class="nav__link">Reviews</a></li>
-                        {{-- <li class="nav__item"><a href="#contact" class="nav__link">Contact us</a></li> --}}
+                        <li class="nav__item"><a href="/contactus" class="nav__link">Contact us</a></li>
 
                         <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
                     </ul>

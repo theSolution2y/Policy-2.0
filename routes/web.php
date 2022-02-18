@@ -47,8 +47,8 @@ Route::get('/admin/submissions',[SubmissionController::class, 'index']);
 // user side
 
 Route::get('/',[HomeController::class,'index']);
-Route::get('/contactus/{id}',[ContactController::class, 'contact']);
 Route::post('/contactus',[ContactController::class, 'send']);
+Route::view('/contactus','contact');
 
 Route::get('/admin/export', [ExportController::class, 'export']);
 
