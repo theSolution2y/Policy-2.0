@@ -17,6 +17,8 @@ Home
 
     <section class="contact">
         <div class="contact-head">
+            <form action="/contactus" method="post">
+                @csrf
             <h2>Contact Us</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, veniam? Optio incidunt animi delectu</p>
         </div>
@@ -48,15 +50,15 @@ Home
                 <form>
                     <h2>Send Message</h2>
                     <div class="inputBox">
-                        <input type="text" name="" required="required">
+                        <input type="text" name="name" required="required">
                         <span>Full Name</span>
                     </div>
                     <div class="inputBox">
-                        <input type="text" name="" required="required">
+                        <input type="email" name="email" required="required">
                         <span>Email</span>
                     </div>
                     <div class="inputBox">
-                        <textarea name="" required="required"></textarea>
+                        <textarea name="message" name="message"></textarea>
                         <span>Type your Message...</span>
                     </div>
                     <div class="inputBox">
@@ -64,6 +66,7 @@ Home
                     </div>
                 </form>
             </div>
+          </form>
         </div>
     </section>
                     

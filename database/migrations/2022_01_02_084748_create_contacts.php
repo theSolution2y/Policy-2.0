@@ -17,12 +17,8 @@ class CreateContacts extends Migration
             $table->id();
             $table->timestamps();
             $table->string('name',40);
-            $table->string('dob');
             $table->string('email',50);
-            $table->string('phone',40);
-            $table->string('country',40);
-            $table->string('state',40);
-                       
+            $table->string('message',250);
         });
     }
 
