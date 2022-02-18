@@ -10,7 +10,7 @@ class ContactController extends Controller
 {
     public function contact($id){
         $cat = Category::where('id',$id)->get();
-        return view('contact',['cat'=>$cat]);
+        return view('policy',['cat'=>$cat]);
     }
     function send(Request $req){
         $contact=new contact;
